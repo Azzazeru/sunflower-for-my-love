@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.pixel-art {
+    display: grid;
+    grid-template-columns: repeat(16, 20px);
+    grid-template-rows: repeat(16, 20px);
+    position: relative;
+    z-index: 1;
+}
+
+.pixel {
+    width: 20px;
+    height: 20px;
+}
+
+.color1 {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.color2 {
+    background-color: #7a4b36;
+}
+
+.color3 {
+    background-color: #fdfe55;
+}
+
+.color4 {
+    background-color: #d27a37;
+}
+
+.color5 {
+    background-color: #f6c041;
+}
+
+.color6 {
+    background-color: #512f16;
+}
+
+.color7 {
+    background-color: #49672b;
+}
+
+.color8 {
+    background-color: #1d2d0e;
+}
+
+.color9 {
+    background-color: #86aa46;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/sunflowers.png');
+    background-size: cover;
+    filter: blur(12px);
+    z-index: 0;
+}
